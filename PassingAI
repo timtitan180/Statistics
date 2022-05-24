@@ -1,0 +1,14 @@
+var completedPasses = 0;
+var totalPasses = 0;
+for(var i=0;i<10;i++) {
+    let passNumber = Math.random() * (10-0) + 0;
+    if(passNumber > 5) {
+        completedPasses+=1;
+        totalPasses+=1;
+    }
+    else if(passNumber < 5) {
+        completedPasses = completedPasses;
+        totalPasses+=1
+    }
+    console.log(completedPasses + "/" + totalPasses);
+}
